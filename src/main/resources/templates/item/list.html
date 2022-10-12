@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <th:block th:each="list:${itemList}">
+            <div>
+                <p th:text="${list.id}"></p>
+                <p th:text="${list.name}"></p>
+            </div>
+        </th:block>
+    </div>
+</body>
+</html>
